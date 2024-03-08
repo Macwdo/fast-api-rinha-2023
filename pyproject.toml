@@ -1,0 +1,18 @@
+
+
+
+[tool.isort]
+profile = "black"
+line_length = 79
+known_third_party = ["django"]
+skip = [
+    "./src/project",
+    "./src/*/migrations",
+    "./src/manage.py"
+]
+
+
+[tool.taskipy.tasks]
+
+lint = 'blue src --check --diff && ruff check src'
+format = 'blue src && ruff check --fix src && isort src'

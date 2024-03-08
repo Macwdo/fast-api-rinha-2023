@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  db:
+    container_name: postgres_rinha
+    image: postgres:latest
+    volumes:
+      - ./data/:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_USER: postgres
+      POSTGRES_DB: db
+    ports:
+      - "5432:5432"
