@@ -1,4 +1,4 @@
-# This project is a implementation of a challenge proposed by
+# This project is an implementation of a challenge proposed in this repository
 
 https://github.com/zanfranceschi/rinha-de-backend-2023-q3
 
